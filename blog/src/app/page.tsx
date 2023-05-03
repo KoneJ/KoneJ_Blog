@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const sans = Open_Sans({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className="bg-gray-500">
+    <section className="bg-gray-500">
       Main
-    </main>
+    </section>
   )
 }
