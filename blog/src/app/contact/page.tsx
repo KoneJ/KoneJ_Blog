@@ -1,5 +1,3 @@
 export default function ContactPage() {
-    return (
-    <p>내 연락처</p>
-    )
+  return <p>연락하기!</p>;
 }

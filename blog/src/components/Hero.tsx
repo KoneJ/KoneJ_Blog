@@ -1,23 +1,26 @@
-import Image from "next/image";
-import profileImage from '../../public/images/이뿌니.jpeg'
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+import profileImage from '../../public/images/이뿌니.jpeg';
 
 export default function Hero() {
-    return (
-    <section className="text-center">
-        <Image src={profileImage}
-        className="mx-auto rounded-full"
-        alt='희경이 사진' 
+  return (
+    <section className='text-center'>
+      <Image
+        className='rounded-full mx-auto'
+        src={profileImage}
+        alt='Picture of the author'
         width={250}
         height={250}
         priority
-        />
-        <h2 className="text-3xl font-bold mt-2">{"안녕 나는 원준이 남자친구야"}</h2>
-        <h3 className="text-xl font-semibold">공학대 3학년 입니다.</h3>
-        <p>백엔드 장인 희경입니다.</p>
-        <Link href ='/contact'>
-            <button className="bg-yellow-500 font-bold rounded-xl py-1 px-4 mt-2">Contact</button>
-        </Link> 
+      />
+      <h2 className='text-3xl font-bold mt-2'>{"안녕하세요!"}</h2>
+      <h3 className='text-xl font-semibold'>고원준의 여자친구 입니다</h3>
+      <p>원준이가 좋아하는 희경이</p>
+      <Link href='/contact'>
+        <button className='bg-yellow-500 font-bold rounded-xl py-1 px-4 mt-2'>
+          Contact Me
+        </button>
+      </Link>
     </section>
-    )
+  );
 }
